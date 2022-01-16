@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "allowJs":true,
+        "target": "ES5",
+        "checkJs": true,
+        "outDir": "./built",
+        "moduleResolution": "Node",
+        "lib": ["ES2015","DOM"]
+    },
+    "include": ["./src/**/*"]
+}
