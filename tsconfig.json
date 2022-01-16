@@ -5,7 +5,8 @@
         "checkJs": true,
         "outDir": "./built",
         "moduleResolution": "Node",
-        "lib": ["ES2015","DOM"]
+        "lib": ["ES2015","DOM"],
+        "noImplicitAny": true
     },
     "include": ["./src/**/*"]
 }
