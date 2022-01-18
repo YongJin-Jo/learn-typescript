@@ -9,7 +9,7 @@ interface GlobalType {
   NewConfiremd: number;
   NewDeaths: number;
   NewRecovered: number;
-  TotalConfiremd: number;
+  TotalConfirmed: number;
   TotalDeaths: number;
   TotalRecovered: number;
 }
@@ -18,8 +18,23 @@ interface Country extends GlobalType {
   Country: string;
   CountryCode: string;
   Date: string;
-  Premium: any;
+  Premium: string;
   Slug: string;
 }
 
-export { CovidSummaryResponse, GlobalType };
+interface CountrySummaryInfo {
+  Cases: number;
+  City: string;
+  CityCode: string;
+  Country: string;
+  CountryCode: string;
+  Date: string;
+  Lat: string;
+  Lon: string;
+  Proivnce: string;
+  Status: string;
+}
+
+export type CountrySummaryResponse = CountrySummaryInfo[];
+
+export { CovidSummaryResponse, GlobalType, Country, CountrySummaryInfo };
