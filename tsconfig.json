@@ -8,6 +8,7 @@
         "lib": ["ES2015","DOM"],
         "noImplicitAny": true,
         "typeRoots": ["./node_modules/@types","types"],
+        "strict": true
     },
     "include": ["./src/**/*"]
     
